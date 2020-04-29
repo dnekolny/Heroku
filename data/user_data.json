@@ -21,7 +21,7 @@
       "accountNumber_user": "234567891",
       "bankCode_user": "2010"
     },
-    "active": false,
+    "active": true,
     "name": "Jirka",
     "sure_name": "Jebal",
     "mail": "aabc@a.cz",
