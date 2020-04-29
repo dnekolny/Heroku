@@ -1,0 +1,264 @@
+.dates{
+    text-align: center !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dates > div{
+     margin: 0 auto;
+ }
+
+.dates > div > div{
+    display: inline-flex;
+    margin-top: 5px;
+}
+
+.dates input, .dates select{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.cats-input{
+    min-width: 100px;
+    max-width: 170px;
+    margin-right: 0;
+}
+
+.charts {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.LineChartSelected {
+    margin: 0 auto;
+    width: 80%;
+    flex-basis: 100%;
+}
+
+.PieChartSelected, .PieChartAll{
+    flex-basis: 49%;
+}
+
+.payments {
+    border-radius: 5px;
+    min-width: 600px;
+    width: 60%;
+    margin: 0 auto;
+    background: lightsteelblue;
+    padding: 30px;
+}
+
+.payments h5 {
+    text-align: left;
+}
+
+.payment_amount {
+    font-weight: bold;
+}
+
+.payment {
+    border-radius: 10px;
+    display: flex;
+    margin: 15px;
+    background: aliceblue;
+    padding: 15px
+}
+
+.payment_left {
+    flex-basis: 30%;
+    text-align: left;
+    padding: 15px;
+    margin: auto 0;
+}
+
+.payment_middle {
+    flex-basis: 50%;
+    text-align: left;
+    border-left: 1px solid #B0C4DE;
+    border-right: 1px solid #B0C4DE;
+    padding: 15px;
+    margin: 5px;
+}
+
+.payment_right {
+    text-align: right;
+    flex-basis: 20%;
+    margin: auto 0;
+    padding: 15px;
+}
+
+.userLogo{
+    flex-basis: 50%;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+hr.divider {
+    border-top: 3px solid #bbb;
+    width: 90%;
+    text-align: center;
+    margin: 50px auto;
+}
+.userPanel {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.userInfo {
+    flex-basis: 50%;
+    text-align: right;
+    margin: 25px;
+}
+
+#currency_input{
+    margin-left: 10px;
+    display: inline-block;
+    width: 130px;
+}
+
+.categories{
+    display: block;
+    margin-top: 30px;
+}
+.category-checkbox-button{
+    display: inline-block;
+    height: 50px;
+}
+.category-checkbox-button span{
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    border: 1px solid #D0D0D0;
+    text-align:center;
+    color: black;
+}
+
+.new-payment-button{
+    margin: 5px !important;
+    padding: 5px 10px !important;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid #D0D0D0;
+    background-color: aliceblue;
+}
+
+.category-checkbox-button:hover > span, .new-payment-button:hover{
+    background: lightskyblue;
+    color: black;
+}
+
+.category-checkbox-button input:checked + span {
+    background-color: royalblue;
+    color: white;
+}
+
+.overviewDetail {
+    display: inline-block;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination > li a {
+    cursor: pointer;
+    padding: 4px 8px 4px 8px;
+    margin-left: 2px;
+}
+
+.pagination > li.active a {
+    border-radius: 5px;
+    border: 3px solid #fff;
+}
+
+.pagination > li a:focus {
+    outline:none;
+}
+
+.previous_page {
+    position: absolute;
+    left: 15px;
+}
+
+.next_page {
+    position: absolute;
+    right: 15px;
+}
+
+.payment_category{
+    /*payment_category mr-2 ml-auto ml-sm-0*/
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+@media (max-width: 1280px) {
+
+    .payments {
+        width: 80%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .charts {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .payments {
+        width: 95%;
+        min-width: 0;
+    }
+    .payment {
+        flex-direction: column;
+    }
+
+    .payment_left, .payment_middle, .payment_right {
+        text-align: center;
+    }
+
+    .payment_left {
+        border-bottom: 1px solid #B0C4DE;
+    }
+
+    .payment_right {
+        border-top: 1px solid #B0C4DE;
+    }
+
+    .payment_middle {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .payment_category{
+        margin-left: auto;
+    }
+
+    .cats-input{
+        margin-right: auto;
+    }
+
+    .userPanel {
+        flex-direction: column;
+    }
+
+    .userInfo {
+        text-align: center;
+    }
+
+
+}

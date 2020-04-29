@@ -1,0 +1,45 @@
+{
+  "name": "mois-server-mock",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server_payment.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
+    "underscore": "^1.9.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.18.7"
+  },
+  "description": "This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/gitlab-basics/create-project.html).",
+  "main": "\u001b[B\u001b[A\u001b[Bserver_payment.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dave258/MOIS-HEROKU.git"
+  },
+  "keywords": [
+    "MOIS",
+    "HEROKU"
+  ],
+  "author": "David Nekolný",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dave258/MOIS-HEROKU/issues"
+  },
+  "homepage": "https://github.com/Dave258/MOIS-HEROKU#readme",
+  "engines": {
+    "node": "12.16.1"
+  }
+}
