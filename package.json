@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node server_payment.js",
+    "start:dev": "nodemon server_payment.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
