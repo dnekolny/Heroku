@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "nodemon server_payment.js",
+    "start": "node server_payment.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
