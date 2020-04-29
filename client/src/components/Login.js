@@ -86,7 +86,7 @@ export default class Login extends Component {
             return (
                 <form className="form-signin" onSubmit={this.handleSubmit}>
                     <img className="App-logo mb-3" src={logo} alt="logo"/>
-                    <h1 className="h3 mb-3 font-weight-normal">AAA Prosíme přihlašte se</h1>
+                    <h1 className="h3 mb-3 font-weight-normal">Prosíme přihlašte se</h1>
                     <label htmlFor="inputEmail" className="sr-only">Emailová adresa</label>
                     <input value={this.state.email} onChange={this.handleLoginChange} type="email" id="inputEmail"
                            className="form-control" placeholder="Emailová adresa" required/>

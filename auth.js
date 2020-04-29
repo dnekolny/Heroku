@@ -45,6 +45,9 @@ router.post("/login", (req, res) => {
 router.post("/fbLogin", (req, res) => {
     let fbRes = req.body;
 
+    console.log("FACEBOOK RESPONSE");
+    console.log(fbRes);
+
     verifyFacebookToken(fbRes.accessToken).then(fbValid => {
 
         if (fbValid) {
@@ -212,6 +215,9 @@ async function verifyFacebookToken(token) {
 }
 
 function sendDelayedResponse(res, object, delay) {
+    console.log("sendDelayedResponse:");
+    console.log(object);
+
     setTimeout(function () {
         res.send(object);
     }, delay * 10);
