@@ -21,10 +21,10 @@ let API_Calls = {
     },
 
     getUri: function (useCase) {
-        let port = process.env.PORT || 5000;
-        console.log("http://localhost:" + port + "/" + useCase);
+        //let port = process.env.PORT || 5000;
+        //console.log("http://localhost:" + port + "/" + useCase);
         return (
-            "http://localhost:" + port + "/" + useCase
+            "/" + useCase
         );
     },
 
