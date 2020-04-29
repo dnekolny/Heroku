@@ -21,8 +21,9 @@ let API_Calls = {
     },
 
     getUri: function (useCase) {
+        let port = process.env.PORT || 5000;
         return (
-            "http://localhost:5000/" + useCase
+            "http://localhost:" + port + "/" + useCase
         );
     },
 
